@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/BlackGlory/extra-blob/compare/v0.1.1...v0.1.2) (2023-11-05)
+
+
+### Features
+
+* add `blobToDataURL` ([715c8f4](https://github.com/BlackGlory/extra-blob/commit/715c8f493e18b833e45110adb39cbb21c6317b3b))
+
 ### [0.1.1](https://github.com/BlackGlory/extra-blob/compare/v0.1.0...v0.1.1) (2023-06-10)
 
 
