@@ -26,3 +26,8 @@ function openFiles(
 ```ts
 function textToBlob(text: string, mimeType?: string): Blob
 ```
+
+### blobToDataURL
+```ts
+function blobToDataURL(blob: Blob): Promise<string>
+```
