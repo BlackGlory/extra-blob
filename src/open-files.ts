@@ -1,4 +1,4 @@
-import { assert } from '@blackglory/prelude'
+import { assert, isntUndefined } from '@blackglory/prelude'
 
 /**
  * It is impossible to handle open file dialog `cancel` event,
@@ -16,11 +16,11 @@ export function openFiles(
     const input = document.createElement('input')
     input.type = 'file'
 
-    if (typeof multiple !== 'undefined') {
+    if (isntUndefined(multiple)) {
       input.multiple = multiple
     }
 
-    if (typeof accept !== 'undefined') {
+    if (accept) {
       input.accept = accept.join(', ')
     }
 
