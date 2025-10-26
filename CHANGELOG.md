@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/BlackGlory/extra-blob/compare/v0.1.2...v0.2.0) (2025-10-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* Renamed `openFile` to `openFiles`
+* - CommonJS => ESM
+- It requires Node.js v22
+
+### Features
+
+* **open-files:** improve error handling ([17f3c3f](https://github.com/BlackGlory/extra-blob/commit/17f3c3f9526203af20c00ec0b2b5a8a3bce986e2))
+* rename `openFile` to `openFiles` ([45af527](https://github.com/BlackGlory/extra-blob/commit/45af527bdf5cebf34e9d8d437015025da5dbbc40))
+* **blob-to-data-url:** improve error handling ([aa0d761](https://github.com/BlackGlory/extra-blob/commit/aa0d7617467f338c72696d5dcbd1413ac1bf9825))
+
+
+* upgrade dependencies ([d99a7e7](https://github.com/BlackGlory/extra-blob/commit/d99a7e7734060572b37eee02ef417205f40bbcbf))
+
 ### [0.1.2](https://github.com/BlackGlory/extra-blob/compare/v0.1.1...v0.1.2) (2023-11-05)
 
 
