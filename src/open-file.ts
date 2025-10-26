@@ -13,14 +13,17 @@ export function openFile(
   return new Promise<FileList>(resolve => {
     const input = document.createElement('input')
     input.type = 'file'
+
     if (typeof multiple !== 'undefined') {
       input.multiple = multiple
     }
+
     if (typeof accept !== 'undefined') {
       input.accept = accept.join(', ')
     }
 
     input.addEventListener('change', () => resolve(input.files!))
+
     input.click() // It is non-blocked
   })
 }
