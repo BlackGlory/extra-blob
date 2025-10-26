@@ -12,9 +12,9 @@ yarn add extra-blob
 function downloadBlob(blob: Blob, filename: string): void
 ```
 
-### openFiles
+### openFile
 ```ts
-function openFiles(
+function openFile(
   options?: {
     accept?: string[]
     multiple?: boolean
