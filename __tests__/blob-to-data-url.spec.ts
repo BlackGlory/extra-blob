@@ -1,5 +1,6 @@
-import { blobToDataURL } from '@src/blob-to-data-url'
-import { textToBlob } from '@src/text-to-blob'
+import { test, expect } from 'vitest'
+import { blobToDataURL } from '@src/blob-to-data-url.js'
+import { textToBlob } from '@src/text-to-blob.js'
 import * as Base64 from 'js-base64'
 
 test('blobToDataURL', async () => {

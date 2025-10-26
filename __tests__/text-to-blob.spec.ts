@@ -1,4 +1,5 @@
-import { textToBlob } from '@src/text-to-blob'
+import { test, expect } from 'vitest'
+import { textToBlob } from '@src/text-to-blob.js'
 import 'blob-polyfill'
 
 test('textToBlob', async () => {
