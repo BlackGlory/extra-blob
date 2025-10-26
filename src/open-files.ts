@@ -12,7 +12,7 @@ export function openFiles(
     multiple?: boolean
   } = {}
 ): Promise<FileList> {
-  return new Promise<FileList>(resolve => {
+  return new Promise<FileList>((resolve, reject) => {
     const input = document.createElement('input')
     input.type = 'file'
 
@@ -25,9 +25,13 @@ export function openFiles(
     }
 
     input.addEventListener('change', () => {
-      assert(input.files)
+      try {
+        assert(input.files, 'No files')
 
-      resolve(input.files)
+        resolve(input.files)
+      } catch (e) {
+        reject(e)
+      }
     })
 
     input.click() // It is non-blocked
